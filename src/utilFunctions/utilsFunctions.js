@@ -55,7 +55,7 @@ export function shortenText(str, n) {
 }
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-const serverBaseURL = 'http://localhost:5000'; //when we deploy the app, the value should be changed to the url that we deployed the server to.
+const serverBaseURL = 'https://perfumery-back.onrender.com/'; //when we deploy the app, the value should be changed to the url that we deployed the server to.
 
 //Make a fetch request to the stripe backend
 export async function fetchFromAPI(endpoint, options) {
