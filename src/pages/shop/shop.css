@@ -1,0 +1,373 @@
+.shop {
+   display: flex;
+   position: relative;
+   height: auto;
+}
+
+.shop-aside {
+   width: 15%;
+   padding-top: 2.5rem;
+   padding-right: 2rem;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 11vh;
+   height: 100vh;
+   transition: 400ms cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
+.content {
+   width: 85%;
+   position: relative;
+}
+
+.topFilter {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   column-gap: 20px;
+   padding: 1.5rem 0px;
+}
+
+.icon {
+   display: none;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   right: 30px;
+   top: 30%;
+   cursor: pointer;
+   background: blue;
+   color: white;
+}
+
+.radio-block {
+   margin-bottom: 1.2rem;
+}
+
+.radio-block p {
+   background-color: var(--primary-color);
+   width: 100%;
+   color: #fff;
+   margin-bottom: 1rem;
+   font-size: 1rem;
+   padding: 3px 8px;
+}
+
+.shop-content {
+   width: 100%;
+   min-height: 50vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.shop-product-listing {
+   margin-top: 1rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 25px;
+   margin-bottom: 3rem;
+}
+
+.filter__widget select {
+   padding: 3px 8px;
+   border: 1px solid #ddd;
+   cursor: pointer;
+   color: var(--primary-color);
+}
+
+.filter__widget select:focus {
+   outline: none !important;
+}
+
+filter__widget select option {
+   font-size: 1rem;
+}
+
+/* ----Check Box Group -- */
+
+.check-block {
+   margin-bottom: 1rem;
+}
+
+.check-block p {
+   background-color: var(--primary-color);
+   width: 100%;
+   color: #fff;
+   margin-bottom: 1rem;
+   font-size: 1rem;
+   padding: 3px 8px;
+}
+
+.shop-checkbox {
+   width: 100%;
+   display: inline-flex;
+   align-items: center;
+   cursor: pointer;
+   margin-bottom: 3px;
+}
+
+.shop-checkbox-input {
+   display: none;
+}
+
+.shop-checkbox-box {
+   width: 1.2em;
+   height: 1.2em;
+   /* 1.2 x current font-size of the parent container */
+   border: 2px solid #bbb;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 10px;
+   flex-shrink: 0;
+   transition: background 0.15s, border-color 0.15s;
+}
+
+.shop-checkbox-box::after {
+   content: '\2714';
+   /* \2714 is the unicode representation of the check mark */
+   color: #fff;
+   transform: scale(0);
+}
+
+.shop-checkbox-input:checked + .shop-checkbox-box {
+   background: #2266dc;
+   border-color: #2266dc;
+}
+
+.shop-checkbox-input:checked + .shop-checkbox-box::after {
+   transform: scale(1);
+}
+
+/* ------- Radio Botton Group ------- */
+.radio__container {
+   margin-bottom: 0px !important;
+}
+
+label.radio {
+   display: inline-flex !important;
+   align-items: center !important;
+   cursor: pointer !important;
+   width: 100%;
+}
+
+.radio__input {
+   display: none;
+}
+
+.radio__radio {
+   width: 1.3em;
+   height: 1.3em;
+   border: 2px solid #d8e4e2;
+   border-radius: 50%;
+   margin-right: 10px;
+   padding: 3px;
+}
+
+.radio__radio::after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   display: block;
+   background: #2266dc;
+   border-radius: 50%;
+   transform: scale(0);
+   transition: transform 0.15s;
+}
+
+.radio__input:checked + .radio__radio::after {
+   transform: scale(1);
+}
+
+/* ------- Input Range ------- */
+.price-range p {
+   background-color: var(--primary-color);
+   width: 100%;
+   color: #fff;
+   margin-bottom: 1rem;
+   font-size: 1rem;
+   padding: 3px 8px;
+}
+
+.price-range.price {
+   margin-top: 5px;
+   width: 100%;
+}
+
+/* ------- Clear Filter ------- */
+.clear-filter {
+   background-color: var(--primary-color);
+   border: none;
+   outline: none;
+   color: #fff;
+   width: 100%;
+   padding: 3px;
+   text-transform: capitalize;
+   margin-top: 3rem;
+}
+
+/* ------- Mobile Filter Icon ------- */
+.mobile-filter-icon {
+   position: fixed;
+   top: 50vh;
+   right: 0;
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--primary-color);
+   border: none;
+   color: #fff;
+}
+
+/* screens less than 1024px in width */
+@media only screen and (max-width: 1024px) {
+   .shop-aside {
+      width: 20%;
+   }
+
+   .content {
+      width: 80%;
+   }
+   .shop-product-listing {
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+
+/* screens less than 992px in width */
+@media only screen and (max-width: 992px) {
+   .products__found {
+      display: none;
+   }
+}
+
+/* screens less than 850px in width */
+@media only screen and (max-width: 850px) {
+   .shop-aside {
+      width: 35%;
+      position: fixed;
+      left: -200%;
+      height: 100%;
+      z-index: 200;
+      background-color: rgba(51, 51, 51, 0.92);
+      color: #fff;
+      top: 0;
+      overflow: scroll;
+      padding: 40px;
+      padding-top: 100px;
+   }
+
+   .shop-aside p {
+      color: #fff !important;
+      padding-bottom: 5px;
+   }
+
+   .shop-aside .price input {
+      width: 100%;
+   }
+
+   .shop-aside .check-block p,
+   .shop-aside .radio-block p,
+   .shop-aside .price-range p {
+      background-color: #fff;
+      color: #333;
+   }
+
+   .shop-aside .shop-checkbox-input:checked + .shop-checkbox-box {
+      background: transparent;
+      border-color: #fff;
+   }
+
+   .shop-aside .shop-checkbox-box {
+      border: 2px solid #fff;
+   }
+
+   .shop-aside .radio__radio {
+      border: 2px solid #fff;
+   }
+
+   .shop-aside .shop-checkbox-box::after {
+      color: #fff;
+   }
+
+   .shop-aside .radio__radio::after {
+      background: #fff;
+   }
+
+   .content {
+      width: 100%;
+      margin-top: 25px;
+   }
+
+   .topFilter {
+      align-items: flex-start;
+   }
+
+   .sort-filter {
+      display: none;
+   }
+
+   .icon {
+      display: flex;
+   }
+
+   .show {
+      left: 0;
+   }
+
+   .shop-product-listing {
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .filter__widget {
+      margin-bottom: 30px;
+   }
+
+   .filter__widget select {
+      padding: 7px 18px 7px 2px;
+      font-size: 0.9rem;
+   }
+}
+
+/* screens less than 768px in width */
+@media only screen and (max-width: 768px) {
+   .shop-aside {
+      width: 45%;
+      padding: 25px;
+      padding-top: 100px;
+   }
+
+   .shop-product-listing {
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+/* screens less than 520px in width */
+@media only screen and (max-width: 520px) {
+   .brand-filter {
+      display: none;
+   }
+   .search-filter {
+      width: 100%;
+   }
+
+   .search__box {
+      width: 100% !important;
+   }
+}
+
+/* screens less than 480px in width */
+@media only screen and (max-width: 480px) {
+   .shop-aside {
+      width: 80%;
+      padding: 25px;
+      padding-top: 100px;
+   }
+
+   .shop-product-listing {
+      column-gap: 15px;
+   }
+}

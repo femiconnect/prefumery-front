@@ -1,0 +1,46 @@
+[
+   {
+      "id": 1,
+      "title": "New Arrivals",
+      "desc": "Fresh natural scents to boost freshness...",
+      "smImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1677325553/perfumery-project/banner-slider/pef1/slider-pef-1-sm_prlqpw.jpg",
+      "mdImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1677325553/perfumery-project/banner-slider/pef1/slider-pef-1-md_llwhb6.jpg",
+      "lgImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1678935378/perfumery-project/banner-slider/pef1/slider-pef-1-lg_reduced_bngz9n.jpg"
+   },
+
+   {
+      "id": 2,
+      "title": "Natural & Organic",
+      "desc": "Irresistable organic fragrance for you...",
+      "smImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1677325665/perfumery-project/banner-slider/pef2/slider-pef-2-sm_rsgj9r.jpg",
+      "mdImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1677325668/perfumery-project/banner-slider/pef2/slider-pef-2-md_mhmvnf.jpg",
+      "lgImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1678935522/perfumery-project/banner-slider/pef2/slider-pef-2-lg_reduced_mny2w0.jpg"
+   },
+
+   {
+      "id": 3,
+      "title": "Essence Aroma",
+      "desc": "Fragrance that inspires confidence...",
+      "smImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1677325717/perfumery-project/banner-slider/pef3/slider-pef-3-sm_nb32r6.jpg",
+      "mdImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1677325720/perfumery-project/banner-slider/pef3/slider-pef-3-lg_vc53gq.jpg",
+      "lgImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1678935843/perfumery-project/banner-slider/pef3/slider-pef-3-lg_reduced_bq0lje.jpg"
+   },
+
+   {
+      "id": 4,
+      "title": "Gifts For Men",
+      "desc": "Private collection perfumes for men...",
+      "smImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1677325804/perfumery-project/banner-slider/pef4/slider-pef-4-sm_e9zzjo.jpg",
+      "mdImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1677325804/perfumery-project/banner-slider/pef4/slider-pef-4-md_kzonyz.jpg",
+      "lgImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1677325807/perfumery-project/banner-slider/pef4/slider-pef-4-lg_vnuu1p.jpg"
+   },
+
+   {
+      "id": 5,
+      "title": "Discount Prices",
+      "desc": "Prices already reduced by 30%...",
+      "smImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1677325853/perfumery-project/banner-slider/pef5/slider-pef-5-sm_wyhjmz.jpg",
+      "mdImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1677325855/perfumery-project/banner-slider/pef5/slider-pef-5-md_ddzumo.jpg",
+      "lgImgUrl": "https://res.cloudinary.com/deqfebl80/image/upload/v1678936054/perfumery-project/banner-slider/pef5/slider-pef-5-lg_reduced_bomefy.jpg"
+   }
+]

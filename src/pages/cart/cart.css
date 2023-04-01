@@ -1,0 +1,117 @@
+.table-responsive {
+   margin-right: 2.5rem;
+}
+
+.table > thead {
+   vertical-align: bottom;
+   border-bottom: 2px solid #ccc !important;
+}
+
+.table tr th {
+   color: #333;
+}
+
+.table td {
+   line-height: 4 !important;
+   color: #333;
+}
+
+.table tr td img {
+   width: 70px !important;
+   height: 70px !important;
+   object-fit: cover;
+}
+
+td i {
+   cursor: pointer;
+}
+
+td,
+th {
+   color: #333;
+}
+
+.count {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   column-gap: 10px;
+}
+
+.count p {
+   color: #333 !important;
+}
+
+.count .sign {
+   cursor: pointer;
+   width: 20px;
+   background: var(--primary-color);
+   color: #fff !important;
+   text-align: center;
+   line-height: 20px;
+}
+
+.cart-aside {
+   position: relative;
+}
+
+.tax-info {
+   max-width: 200px;
+   font-size: 13px;
+   margin-top: 1.5rem;
+   margin-bottom: -20px;
+}
+
+.cart-delete-btn {
+   font-size: 20px;
+   color: #ff1d1d;
+}
+
+.cart__login {
+   padding: 0.37rem 0.75rem;
+   margin-bottom: 1rem;
+   color: #b62c37;
+   background-color: #f5c2c7;
+   border: 1px solid #d38c93;
+}
+
+/* screens less than 1024px in width */
+@media only screen and (max-width: 1024px) {
+   .table-responsive {
+      margin-right: 1rem;
+   }
+}
+
+/* screens less than 992px in width */
+@media only screen and (max-width: 992px) {
+   .table-responsive {
+      margin-right: 0;
+   }
+
+   .subtotal {
+      margin-top: 3rem;
+      margin-left: 55%;
+      width: 45% !important;
+      margin-bottom: 3rem;
+   }
+}
+
+/* screens less than 768px in width */
+@media only screen and (max-width: 768px) {
+   .table td {
+      line-height: 1.5 !important;
+   }
+}
+
+/* screens less than 576px in width */
+@media only screen and (max-width: 576px) {
+   .subtotal {
+      margin-left: 0%;
+      width: 100% !important;
+   }
+}
+
+.offer-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}

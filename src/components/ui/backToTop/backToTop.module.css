@@ -1,0 +1,24 @@
+.wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper {
+   width: 40px;
+   height: 40px;
+   background-color: #0445a0;
+   position: fixed;
+   bottom: 25px;
+   right: 15px;
+   z-index: 400;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.wrapper img {
+   width: 25px;
+   height: 25px;
+}

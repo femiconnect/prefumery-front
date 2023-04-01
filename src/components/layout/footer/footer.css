@@ -1,0 +1,18 @@
+.footer {
+   background: #3a3a3a;
+}
+
+.footer__copyright {
+   font-size: 0.9rem;
+   color: rgba(255, 255, 255, 0.45);
+   width: 100%;
+   padding: 10px;
+}
+
+/* screens less than 480px in width */
+@media only screen and (max-width: 480px) {
+   .footer__copyright {
+      font-size: 0.7rem;
+      line-height: 1.4;
+   }
+}

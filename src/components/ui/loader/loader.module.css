@@ -1,0 +1,26 @@
+.wrapper {
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(32, 32, 32, 0.7);
+   z-index: 999;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper .spinner {
+   height: 60px;
+   width: 60px;
+   border: 6px solid;
+   border-color: whitesmoke transparent whitesmoke transparent;
+   border-radius: 50%;
+   animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+   to {
+      transform: rotate(360deg);
+   }
+}

@@ -1,0 +1,71 @@
+.register__content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.login__header {
+   text-align: center;
+}
+
+.auth__form {
+   margin-top: 30px;
+   max-width: 280px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.auth__form .form__group input {
+   width: 100% !important;
+   border: 1px solid var(--card-bg-02);
+   padding: 5px 8px;
+   border-radius: 0px !important;
+}
+
+.forgot__password {
+   text-align: center;
+   margin-bottom: -20px;
+}
+
+.forgot__password a {
+   text-align: center;
+   font-size: 0.85rem;
+   color: #0171d3;
+   cursor: pointer;
+}
+
+.no__account {
+   text-align: center;
+   font-size: 0.85rem;
+}
+
+.no__account a {
+   color: #0171d3;
+   cursor: pointer;
+}
+
+.password__input-group {
+   position: relative;
+}
+
+.password__input-group i {
+   position: absolute;
+   color: var(--small-text-color);
+   top: 50%;
+   transform: translateY(-50%);
+   right: 10px;
+   cursor: pointer;
+   display: none;
+}
+
+.auth__form input[type='file'] {
+   color: #fff;
+   cursor: pointer;
+   border: none;
+   padding: 0;
+}
+
+.signup__submit-btn {
+   margin-top: 0.9rem !important;
+}

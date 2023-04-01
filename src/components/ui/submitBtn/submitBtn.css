@@ -1,0 +1,38 @@
+.uiBtn {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   outline: none !important;
+   padding: 8px 0px !important;
+   background: #0445a0;
+   color: #fff;
+   cursor: pointer;
+   font-size: 15px !important;
+   margin-top: 10px !important;
+   margin-bottom: 10px;
+}
+
+.uiBtn img {
+   width: 17px;
+   height: 17px;
+   animation: spinner 0.6s linear infinite;
+}
+
+.disabled {
+   opacity: 0.75;
+   cursor: not-allowed;
+}
+
+@keyframes spinner {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+@media (max-width: 480px) {
+   .uiBtn {
+      width: 100%;
+   }
+}

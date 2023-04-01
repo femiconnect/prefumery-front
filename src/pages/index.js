@@ -1,0 +1,12 @@
+export { default as Home } from './home/Home';
+export { default as Cart } from './cart/Cart';
+export { default as ContactUs } from './contact/ContactUs';
+export { default as Login } from './auth/login/Login';
+export { default as ProductDetails } from './productDetails/ProductDetails';
+export { default as Shop } from './shop/Shop';
+export { default as Register } from './auth/register/Register';
+export { default as ResetPassword } from './auth/resetPassword/ResetPassword';
+export { default as PageNotFound } from './pageNotFound/PageNotFound';
+export { default as MyOrders } from './orders/MyOrders';
+export { default as Admin } from './admin/Admin';
+export { default as Redirect } from './redirect/Redirect';
