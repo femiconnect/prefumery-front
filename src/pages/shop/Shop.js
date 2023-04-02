@@ -9,17 +9,12 @@ import {
    Search,
    Sort,
    FilterByBrand,
-   RadioBtnGroupFilter,
    CheckboxGroupFilter,
    PriceFilter,
    Pagination,
 } from '../../components/ui/filters/';
 import useFetchCollection from '../../customHooks/useFetchCollection';
-import {
-   selectProducts,
-   storeProducts,
-   getPriceRange,
-} from '../../redux/slices/productSlice';
+import { storeProducts, getPriceRange } from '../../redux/slices/productSlice';
 import { selectFilteredProducts } from '../../redux/slices/filterSlice';
 import './shop.css';
 

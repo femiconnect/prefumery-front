@@ -7,7 +7,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import { auth } from '../../../firebase/config';
 import { removeActiveUser, selectUser } from '../../../redux/slices/authSlice';
-import ShowOnLogin from '../../showHideLink/ShowHideLink';
 import AdminOnlyLink from '../../adminOnlyLink/AdminOnlyLink';
 import { capitalizeWord } from '../../../utilFunctions/utilsFunctions';
 import {
@@ -17,16 +16,10 @@ import {
 } from '../../../redux/slices/cartSlice';
 import logo from '../../../assets/images/logo.png';
 import userIcon from '../../../assets/images/z-others/user-icon.png';
-import HeaderSearchLg from '../../ui/headerSearchLarge/HeaderSearchLg';
-import { filterBySearch } from '../../../redux/slices/filterSlice';
-import { selectProducts } from '../../../redux/slices/productSlice';
-//HeaderSearchLgchLg
 import './header.css';
 
 const Header = () => {
    const [scrollPage, setScrollPage] = useState(false); //show/hide sticky header
-   const [search, setSearch] = useState('');
-   // const [filterLoader, setFilterLoader] = useState(false);
 
    const dispatch = useDispatch();
    const navigate = useNavigate();

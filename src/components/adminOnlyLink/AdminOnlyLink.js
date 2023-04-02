@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { selectEmail, selectUser } from '../../redux/slices/authSlice';
+import { selectUser } from '../../redux/slices/authSlice';
 
 //Shows top menu link only if user is an admin
 const AdminOnlyLink = ({ children }) => {

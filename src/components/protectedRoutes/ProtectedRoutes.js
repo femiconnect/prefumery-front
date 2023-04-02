@@ -1,13 +1,7 @@
-import { onAuthStateChanged } from 'firebase/auth';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import { useLocation, Navigate, Outlet } from 'react-router-dom';
-import { auth } from '../../firebase/config';
-import {
-   selectEmail,
-   selectUser,
-   selectUserName,
-} from '../../redux/slices/authSlice';
+import { selectUser } from '../../redux/slices/authSlice';
 
 const ProtectedRoutes = () => {
    const user = useSelector(selectUser);

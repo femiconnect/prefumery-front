@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { Helmet, CommonSection, Footer, Header } from '../../components/layout';
 import ProcessCheckoutBtn from '../checkout/process-checkout-btn/ProcessCheckoutBtn';
-import { selectIsLoggedIn, selectUser } from '../../redux/slices/authSlice';
+import { selectUser } from '../../redux/slices/authSlice';
 import {
    addItemToCart,
    decreaseItemInCart,

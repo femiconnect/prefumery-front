@@ -8,8 +8,8 @@ const SubmitBtn = (props) => {
    return (
       <button
          type='submit'
-         className={isLoading == true ? 'uiBtn disabled' : 'uiBtn'}
-         disabled={isLoading == true ? true : false}
+         className={isLoading === true ? 'uiBtn disabled' : 'uiBtn'}
+         disabled={isLoading === true ? true : false}
       >
          {isLoading === true ? (
             <img src={loaderImg} alt='' />

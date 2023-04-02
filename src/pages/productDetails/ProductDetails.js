@@ -8,7 +8,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { db } from '../../firebase/config';
 import { Helmet, CommonSection, Header, Footer } from '../../components/layout';
 import Loader from '../../components/ui/loader/Loader';
-import ProductList from '../../components/ui/productList/ProductList';
 import {
    addItemToCart,
    decreaseItemInCart,
@@ -22,9 +21,6 @@ import './productDetails.css';
 const ProductDetails = () => {
    const { id } = useParams();
    const [product, setProduct] = useState(null);
-   const [qty, setQty] = useState(1);
-
-   const products = useSelector(selectProducts);
 
    const cartItems = useSelector(selectCartItems);
    const dispatch = useDispatch();
@@ -119,7 +115,7 @@ const ProductDetails = () => {
                                                 decreaseItem(product)
                                              }
                                              disabled={
-                                                productInCart.cartQty == 1
+                                                productInCart.cartQty === 1
                                              }
                                           >
                                              -
