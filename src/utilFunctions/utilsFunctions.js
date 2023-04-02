@@ -63,7 +63,15 @@ export async function fetchFromAPI(endpoint, options) {
    const { method, body } = { method: 'POST', body: null, ...options };
    //default body value is null, but if body has some options passed to it, the options will overwrite the default null value
 
-   const res = await fetch(`${serverBaseURL}/${endpoint}`, {
+   // const res = await fetch(`${serverBaseURL}/${endpoint}`, {
+   //    method,
+   //    ...(body && { body: JSON.stringify(body) }),
+   //    headers: {
+   //       'Content-Type': 'application/json',
+   //    },
+   // });
+
+   const res = await fetch(`${process.env.SERVER_BASE_URL}/${endpoint}`, {
       method,
       ...(body && { body: JSON.stringify(body) }),
       headers: {
