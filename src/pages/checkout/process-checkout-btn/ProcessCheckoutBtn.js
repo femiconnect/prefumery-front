@@ -39,6 +39,8 @@ const ProcessCheckoutBtn = () => {
          body: { line_items, customer_email: user.email },
       });
 
+      console.log('response => ', response);
+
       const { sessionId } = response;
       console.log('sessionId is', sessionId);
       const { error } = await stripe.redirectToCheckout({ sessionId });
